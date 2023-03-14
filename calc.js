@@ -1,23 +1,30 @@
-
-//add function
 const addition = function(a,b) {
     return a + b
-}
-
-//subtract function
+};
 const subtraction = function(a,b) {
     return a - b
-}
-
-//multiple function
+};
 const multiplication = function (a,b) {
     return a * b
-}
-//divide function
-
-//input two numbers
-//function takes two numbers and divides the two numbers
-//return the number and remainder if applicable
+};
 const division = function(a,b) {
     return a/b
-}
+};
+
+
+const operate = function(num1, num2, operator) {
+    if (operator == '+') {
+        return addition(num1,num2);
+    } else if (operator == '-') {
+        return subtraction(num1,num2);
+    } else if (operator == '*') {
+        return multiplication(num1,num2);
+    } else if (operator == '/') {
+        return division(num1,num2);
+    }
+};
+
+// console.log(operate(1,2,'*'));
+// console.log(operate(9,10,'+'));
+// console.log(operate(200,10,'/'));
+// console.log(operate(2,20, '-'));
