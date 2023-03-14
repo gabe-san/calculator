@@ -1,17 +1,16 @@
-const addition = function(a,b) {
-    return a + b
-};
-const subtraction = function(a,b) {
-    return a - b
-};
-const multiplication = function (a,b) {
-    return a * b
-};
-const division = function(a,b) {
-    return a/b
-};
+// base number operation functions
+const addition = (a,b) => a + b
+const subtraction = (a,b) =>  a - b
+const multiplication = (a,b) => a * b
+const division = (a,b) => a / b
+
+// input variables 
+var num1;
+var num2;
+var operator;
 
 
+// input function based on input from calculator UI
 const operate = function(num1, num2, operator) {
     if (operator == '+') {
         return addition(num1,num2);
@@ -28,3 +27,4 @@ const operate = function(num1, num2, operator) {
 // console.log(operate(9,10,'+'));
 // console.log(operate(200,10,'/'));
 // console.log(operate(2,20, '-'));
+

@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+  }
+
+body {
+    background: rgb(110, 109, 109);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:95vh;
+    min-height: 400px;
+    padding: 0;
+    margin-top: 5px;
+}
+
+/* Calculator Container */
+
+#container {
+    width: 350px;
+    padding: 13px 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: rgb(189, 186, 186);
+}
+
+/* Screen Output */
+
+.screen {
+    padding: 20px 30px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    font-size: 16px;
+    min-height: 20px;
+}
+
+.current-operand {
+    font-size: 32px;
+    min-height: 40px;
+}
+
+/* Buttons */
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+}
+
+#acBtn,
+#delBtn {
+    grid-column: span 2;
+}
+
+#acBtn {
+    background-color: pink;
+}
+
+#delBtn {
+    background-color: aquamarine;
+}
+
+.btn {
+    font-size: 20px;
+    border: 2px solid rgb(91, 91, 91) ;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Animations */
+
+.btn:hover {
+    background-color: #cac7c7;
+}
+
+#acBtn:hover{
+    background-color: rgba(255, 192, 203, 0.52);
+}
+
+#delBtn:hover {
+    background-color: rgba(127, 255, 212, 0.434);
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
